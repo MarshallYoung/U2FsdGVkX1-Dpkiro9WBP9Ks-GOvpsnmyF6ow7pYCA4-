@@ -7,7 +7,11 @@
     <uses-sdk
         android:minSdkVersion="16"
         android:targetSdkVersion="22" />
-
+    <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 应用入口 -->
     <application
         android:name=".Yucheng020Application"
         android:allowBackup="true"
@@ -24,6 +28,18 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <!-- 登陆界面 -->
+        <activity android:name="com.yuchengtech.yuchengo2o.activity.impl.LoginActivity" />
+        <!-- 应用主界面 -->
+        <activity android:name="com.yuchengtech.yuchengo2o.activity.impl.MainActivity" />
+        <!-- 二维码扫描界面 -->
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
     </application>
 

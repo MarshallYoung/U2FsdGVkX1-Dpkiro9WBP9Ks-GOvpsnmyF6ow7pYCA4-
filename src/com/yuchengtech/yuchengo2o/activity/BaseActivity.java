@@ -1,5 +1,6 @@
 package com.yuchengtech.yuchengo2o.activity;
 
+import com.yuchengtech.yuchengo2o.R;
 import com.yuchengtech.yuchengo2o.Yucheng020Application;
 
 import android.app.Activity;
@@ -9,17 +10,17 @@ import android.net.NetworkInfo;
 import android.widget.Toast;
 
 /**
- * ¼¯³ÉÁËÒ»Ğ©¹¦ÄÜµÄActivity»ùÀà
+ * æ·»åŠ äº†ä¸€äº›åŠŸèƒ½çš„ActivityåŸºç±»
  * 
- * @author Ô¬Ë§ Create at 2015-04-08
+ * @author è¢å¸… Create at 2015-04-08
  */
 public class BaseActivity extends Activity {
 
-	long touchTime = 0; // µ¥»÷ÎïÀíºóÍË¼üµÄÊ±¼äµã
-	long waitTime = 2000; // ÔÚ¶àÉÙÃëÄÚµÚ¶ş´Î°´ºóÍË¼ü»áÍË³öapplication
+	long touchTime = 0; // ç¬¬ä¸€æ¬¡æŒ‰ä¸‹åé€€é”®çš„æ—¶é—´ç‚¹
+	long waitTime = 2000; // åœ¨å¤šå°‘æ¯«ç§’å†…ç¬¬äºŒæ¬¡æŒ‰ä¸‹åé€€é”®å°±ä¼šé€€å‡ºapplication
 
 	/**
-	 * ÅĞ¶ÏÊÇ·ñÓĞÍøÂçÁ¬½Ó,Ã»ÓĞ·µ»Øfalse
+	 * åˆ¤æ–­æ˜¯å¦è”ç½‘
 	 */
 	public boolean hasInternetConnected() {
 		ConnectivityManager manager = (ConnectivityManager) Yucheng020Application
@@ -34,13 +35,15 @@ public class BaseActivity extends Activity {
 	}
 
 	/**
-	 * Á¬°´Á½´ÎÍË³öApplicationµÄ¹¦ÄÜ
+	 * ç›‘å¬åé€€æŒ‰é”®,è¿å‡»ä¸¤æ¬¡åé€€é€€å‡ºapplication
 	 */
 	@Override
 	public void onBackPressed() {
 		long currentTime = System.currentTimeMillis();
 		if ((touchTime + waitTime) < currentTime) {
-			Toast.makeText(this, "ÔÙ´Îµã»÷ÍË³ö", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this,
+					this.getResources().getString(R.string.exit_note),
+					Toast.LENGTH_SHORT).show();
 			touchTime = currentTime;
 		} else {
 			finish();

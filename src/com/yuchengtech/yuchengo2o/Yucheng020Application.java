@@ -3,7 +3,7 @@ package com.yuchengtech.yuchengo2o;
 import android.app.Application;
 
 /**
- * 应用程序入口
+ * 搴旂敤鍏ュ彛
  */
 public class Yucheng020Application extends Application {
 	private static Yucheng020Application instance = null;

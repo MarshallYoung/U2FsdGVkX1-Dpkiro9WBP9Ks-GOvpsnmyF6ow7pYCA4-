@@ -3,39 +3,43 @@ package com.yuchengtech.yuchengo2o.utils;
 import android.util.Log;
 
 public class LogUtils {
-	/** 日志输出级别NONE */
+	/** 鏃ュ織杈撳嚭绾у埆NONE */
 
 	public static final int LEVEL_NONE = 0;
 
-	/** 日志输出级别V */
+	/** 鏃ュ織杈撳嚭绾у埆V */
 
 	public static final int LEVEL_VERBOSE = 1;
 
-	/** 日志输出级别D */
+	/** 鏃ュ織杈撳嚭绾у埆D */
 
 	public static final int LEVEL_DEBUG = 2;
 
-	/** 日志输出级别I */
+	/** 鏃ュ織杈撳嚭绾у埆I */
 
 	public static final int LEVEL_INFO = 3;
 
-	/** 日志输出级别W */
+	/** 鏃ュ織杈撳嚭绾у埆W */
 
 	public static final int LEVEL_WARN = 4;
 
-	/** 日志输出级别E */
+	/** 鏃ュ織杈撳嚭绾у埆E */
 
 	public static final int LEVEL_ERROR = 5;
 
-	/** 日志输出时的TAG */
+	/** 鏃ュ織杈撳嚭鏃剁殑TAG */
 
-	private static String mTag = "YuchengO2O";
+	private static String mTag = "googleplay";
 
-	/** 是否允许输出log */
+	/** 鏄惁鍏佽杈撳嚭log */
 
 	private static int mDebuggable = 6;
 
-	/** 以级别为 d 的形式输出LOG */
+
+
+
+
+	/** 浠ョ骇鍒负 d 鐨勫舰寮忚緭鍑篖OG */
 
 	public static void v(String msg) {
 
@@ -47,7 +51,7 @@ public class LogUtils {
 
 	}
 
-	/** 以级别为 d 的形式输出LOG */
+	/** 浠ョ骇鍒负 d 鐨勫舰寮忚緭鍑篖OG */
 
 	public static void d(String msg) {
 
@@ -59,7 +63,7 @@ public class LogUtils {
 
 	}
 
-	/** 以级别为 i 的形式输出LOG */
+	/** 浠ョ骇鍒负 i 鐨勫舰寮忚緭鍑篖OG */
 
 	public static void i(String msg) {
 
@@ -71,7 +75,7 @@ public class LogUtils {
 
 	}
 
-	/** 以级别为 w 的形式输出LOG */
+	/** 浠ョ骇鍒负 w 鐨勫舰寮忚緭鍑篖OG */
 
 	public static void w(String msg) {
 
@@ -83,7 +87,7 @@ public class LogUtils {
 
 	}
 
-	/** 以级别为 w 的形式输出Throwable */
+	/** 浠ョ骇鍒负 w 鐨勫舰寮忚緭鍑篢hrowable */
 
 	public static void w(Throwable tr) {
 
@@ -95,7 +99,7 @@ public class LogUtils {
 
 	}
 
-	/** 以级别为 w 的形式输出LOG信息和Throwable */
+	/** 浠ョ骇鍒负 w 鐨勫舰寮忚緭鍑篖OG淇℃伅鍜孴hrowable */
 
 	public static void w(String msg, Throwable tr) {
 
@@ -107,7 +111,7 @@ public class LogUtils {
 
 	}
 
-	/** 以级别为 e 的形式输出LOG */
+	/** 浠ョ骇鍒负 e 鐨勫舰寮忚緭鍑篖OG */
 
 	public static void e(String msg) {
 
@@ -119,7 +123,7 @@ public class LogUtils {
 
 	}
 
-	/** 以级别为 e 的形式输出Throwable */
+	/** 浠ョ骇鍒负 e 鐨勫舰寮忚緭鍑篢hrowable */
 
 	public static void e(Throwable tr) {
 
@@ -131,7 +135,7 @@ public class LogUtils {
 
 	}
 
-	/** 以级别为 e 的形式输出LOG信息和Throwable */
+	/** 浠ョ骇鍒负 e 鐨勫舰寮忚緭鍑篖OG淇℃伅鍜孴hrowable */
 
 	public static void e(String msg, Throwable tr) {
 
