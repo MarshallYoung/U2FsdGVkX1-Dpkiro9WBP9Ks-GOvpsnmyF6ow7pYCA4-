@@ -2,107 +2,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2297db"
-    android:orientation="vertical"
-    android:weightSum="10" >
+    android:background="@drawable/bg_login"
+    android:gravity="center"
+    android:orientation="vertical" >
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/login_title_size" />
 
-    <LinearLayout
-        android:layout_width="260dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="4"
-        android:background="#ffffff"
-        android:gravity="center_horizontal"
-        android:orientation="vertical" >
+    <EditText
+        android:layout_width="@dimen/login_et_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_margin"
+        android:background="@drawable/bg_et"
+        android:digits="@+id/et_login_company"
+        android:drawableLeft="@drawable/ic_account"
+        android:drawableStart="@drawable/ic_account"
+        android:hint="@string/hint_enter_company"
+        android:padding="@dimen/login_et_padding"
+        android:textSize="@dimen/login_text_size" />
 
-        <LinearLayout
+    <EditText
+        android:layout_width="@dimen/login_et_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_margin"
+        android:background="@drawable/bg_et"
+        android:digits="@+id/et_login_account"
+        android:drawableLeft="@drawable/ic_account"
+        android:drawableStart="@drawable/ic_account"
+        android:hint="@string/hint_enter_account"
+        android:padding="@dimen/login_et_padding"
+        android:textSize="@dimen/login_text_size" />
+
+    <EditText
+        android:layout_width="@dimen/login_et_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_margin"
+        android:background="@drawable/bg_et"
+        android:digits="@+id/et_login_password"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawableStart="@drawable/ic_lock"
+        android:hint="@string/hint_enter_password"
+        android:padding="@dimen/login_et_padding"
+        android:textSize="@dimen/login_text_size" >
+    </EditText>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:text="@string/save_account"
+            android:textSize="@dimen/login_text_size" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_user"
-                android:contentDescription="@string/hint_enter_company" />
-
-            <EditText
-                android:id="@+id/et_company_num"
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:hint="@string/hint_enter_company" />
-        </LinearLayout>
-
-        <LinearLayout
+        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:text="@string/auto_login"
+            android:textSize="@dimen/login_text_size" />
+    </RadioGroup>
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_user"
-                android:contentDescription="@string/hint_enter_user" />
-
-            <EditText
-                android:id="@+id/et_user_num"
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:hint="@string/hint_enter_user" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ic_key"
-                android:contentDescription="@string/hint_enter_password" />
-
-            <EditText
-                android:id="@+id/et_password"
-                android:layout_width="180dp"
-                android:layout_height="wrap_content"
-                android:hint="@string/hint_enter_password"
-                android:inputType="textPassword" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/save_username"
-                android:textColor="#000000" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/save_password"
-                android:textColor="#000000" />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login" />
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="4" />
+    <Button
+        android:layout_width="@dimen/login_et_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn"
+        android:padding="@dimen/login_et_padding"
+        android:text="@string/login"
+        android:textSize="@dimen/login_text_size" />
 
 </LinearLayout>

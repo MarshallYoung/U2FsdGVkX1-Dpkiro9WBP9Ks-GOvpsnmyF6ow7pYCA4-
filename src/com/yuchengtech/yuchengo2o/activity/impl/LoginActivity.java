@@ -16,7 +16,7 @@ import com.yuchengtech.yuchengo2o.activity.BaseActivity;
  * @author 袁帅 Create on 2015-04-09
  */
 public class LoginActivity extends BaseActivity implements OnClickListener {
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -25,15 +25,6 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 	}
 
 	@Override
-	@OnClick(R.id.btn_login)
 	public void onClick(View v) {
-		switch (v.getId()) {
-		case R.id.btn_login:
-			// 点击登陆
-			Intent intent = new Intent(this, MainActivity.class);
-			startActivity(intent);
-
-			break;
-		}
 	}
 }

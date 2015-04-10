@@ -17,7 +17,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
 
         <!-- 初始化界面 -->
         <activity
@@ -30,9 +30,13 @@
             </intent-filter>
         </activity>
         <!-- 登陆界面 -->
-        <activity android:name="com.yuchengtech.yuchengo2o.activity.impl.LoginActivity" />
+        <activity
+            android:name="com.yuchengtech.yuchengo2o.activity.impl.LoginActivity"
+            android:screenOrientation="portrait" />
         <!-- 应用主界面 -->
-        <activity android:name="com.yuchengtech.yuchengo2o.activity.impl.MainActivity" />
+        <activity
+            android:name="com.yuchengtech.yuchengo2o.activity.impl.MainActivity"
+            android:screenOrientation="landscape" />
         <!-- 二维码扫描界面 -->
         <activity
             android:name="com.zxing.activity.CaptureActivity"

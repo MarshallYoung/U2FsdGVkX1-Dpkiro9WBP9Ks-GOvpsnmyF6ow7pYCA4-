@@ -2,36 +2,162 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:background="@drawable/bg_main"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="@dimen/main_padding" >
 
-    <EditText
-        android:id="@+id/et_webaddress"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:inputType="text" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/btn_createqrcode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="生成二维码测试" />
+        <!-- 公司图标 -->
 
-    <ImageView
-        android:id="@+id/iv_qrcode"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:background="#ff0000" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/main_margin"
+            android:layout_weight="4"
+            android:background="@drawable/transparent"
+            android:contentDescription="@string/main_default_company"
+            android:padding="@dimen/main_margin"
+            android:src="@drawable/ic_yuchengtech" />
+        <!-- 左侧公司名称 -->
 
-    <Button
-        android:id="@+id/btn_scanner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="扫描二维码" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/main_margin"
+            android:layout_weight="1"
+            android:background="@drawable/transparent"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="@dimen/main_tv_padding"
+            android:singleLine="true"
+            android:text="@string/main_default_company"
+            android:textColor="@color/text_poop"
+            android:textSize="@dimen/main_text_size" />
+        <!-- 左下角按钮 -->
 
-    <TextView
-        android:id="@+id/tv_result"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="显示结果" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/main_margin"
+                android:layout_marginRight="@dimen/main_margin"
+                android:layout_weight="1"
+                android:background="@drawable/transparent"
+                android:contentDescription="@string/main_back"
+                android:padding="@dimen/main_margin"
+                android:src="@drawable/ic_back" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/transparent"
+                android:contentDescription="@string/main_setting"
+                android:padding="@dimen/main_margin"
+                android:src="@drawable/ic_setting" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 右侧菜单 -->
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/main_margin"
+        android:layout_marginStart="@dimen/main_margin"
+        android:layout_weight="5"
+        android:background="@drawable/transparent"
+        android:padding="@dimen/main_padding" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/main_padding"
+                android:layout_marginStart="@dimen/main_padding"
+                android:drawableTop="@drawable/ic_cashier"
+                android:gravity="center"
+                android:text="@string/main_cashier"
+                android:textColor="@color/text_poop"
+                android:textSize="@dimen/main_text_size" >
+            </TextView>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/main_padding"
+                android:layout_marginStart="@dimen/main_padding"
+                android:drawableTop="@drawable/ic_orders"
+                android:gravity="center"
+                android:text="@string/main_orders"
+                android:textColor="@color/text_poop"
+                android:textSize="@dimen/main_text_size" >
+            </TextView>
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/main_padding"
+                android:layout_marginStart="@dimen/main_padding"
+                android:drawableTop="@drawable/ic_coupon"
+                android:gravity="center"
+                android:text="@string/main_coupon"
+                android:textColor="@color/text_poop"
+                android:textSize="@dimen/main_text_size" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/main_padding"
+                android:layout_marginStart="@dimen/main_padding"
+                android:drawableTop="@drawable/ic_vip"
+                android:gravity="center"
+                android:text="@string/main_vip"
+                android:textColor="@color/text_poop"
+                android:textSize="@dimen/main_text_size" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/main_padding"
+                android:layout_marginStart="@dimen/main_padding"
+                android:drawableTop="@drawable/ic_sales"
+                android:gravity="center"
+                android:text="@string/main_sales"
+                android:textColor="@color/text_poop"
+                android:textSize="@dimen/main_text_size" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/main_padding"
+                android:layout_marginStart="@dimen/main_padding"
+                android:drawableTop="@drawable/ic_statistics"
+                android:gravity="center"
+                android:text="@string/main_statistics"
+                android:textColor="@color/text_poop"
+                android:textSize="@dimen/main_text_size" />
+        </TableRow>
+    </TableLayout>
 
 </LinearLayout>
