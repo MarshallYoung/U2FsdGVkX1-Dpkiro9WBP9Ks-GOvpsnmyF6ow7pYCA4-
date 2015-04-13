@@ -1,20 +1,34 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+    <style name="AppBaseTheme" parent="android:Theme.Light" />
+
+    <style name="AppTheme" parent="AppBaseTheme" />
+
+    <!-- 登陆界面的EditText风格 -->
+    <style name="et_login">
+        <item name="android:layout_width">@dimen/login_et_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/login_et_margin</item>
+        <item name="android:padding">@dimen/login_padding</item>
+        <item name="android:background">@drawable/bg_et</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
     </style>
-
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    <!-- 功能选项 -->
+    <style name="function_item">
+        <item name="android:padding">@dimen/main_function_padding</item>
+        <item name="android:textSize">@dimen/main_function_size</item>
+        <item name="android:textColor">@color/text_poop</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/main_function_height</item>
+        <item name="android:background">@drawable/transparent</item>
+    </style>
+    <!-- main界面右侧的选项卡风格 -->
+    <style name="selector_main">
+        <item name="android:layout_marginLeft">@dimen/main_padding  </item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_poop  </item>
+        <item name="android:textSize"> @dimen/main_function_size</item>
     </style>
 
 </resources>

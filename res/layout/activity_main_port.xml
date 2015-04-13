@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/poop"
+    android:orientation="vertical"
+    android:padding="@dimen/main_padding" >
+
+    <LinearLayout
+        android:id="@+id/ll_company"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_square_length"
+        android:layout_marginBottom="@dimen/main_padding"
+        android:background="@drawable/transparent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="0dp" >
+
+        <!-- 公司图标 -->
+
+        <ImageView
+            android:id="@+id/iv_company"
+            android:layout_width="@dimen/main_square_length"
+            android:layout_height="@dimen/main_square_length"
+            android:contentDescription="@string/default_company"
+            android:src="@drawable/ic_logo" />
+        <!-- 公司名 -->
+
+        <TextView
+            android:id="@+id/et_company"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/main_tv_padding"
+            android:text="@string/default_company"
+            android:textColor="@color/text_poop"
+            android:textSize="@dimen/main_company_size" />
+    </LinearLayout>
+    <!-- 功能菜单 -->
+    <!-- 收银 -->
+
+    <TextView
+        style="@style/function_item"
+        android:layout_marginBottom="@dimen/main_margin"
+        android:layout_marginTop="@dimen/main_padding"
+        android:drawableLeft="@drawable/ic_cashier"
+        android:drawableStart="@drawable/ic_cashier"
+        android:text="@string/cashier" />
+    <!-- 订单管理 -->
+
+    <TextView
+        style="@style/function_item"
+        android:layout_marginBottom="@dimen/main_margin"
+        android:drawableLeft="@drawable/ic_orders"
+        android:drawableStart="@drawable/ic_orders"
+        android:text="@string/orders" />
+    <!-- 店面活动 -->
+
+    <TextView
+        style="@style/function_item"
+        android:drawableLeft="@drawable/ic_sales"
+        android:drawableStart="@drawable/ic_sales"
+        android:text="@string/sales" />
+
+</LinearLayout>

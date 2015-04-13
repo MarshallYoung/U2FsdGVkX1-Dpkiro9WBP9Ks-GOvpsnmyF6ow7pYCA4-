@@ -2,76 +2,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_login"
+    android:background="@color/poop"
     android:gravity="center"
     android:orientation="vertical" >
+
+    <!-- 标题 -->
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/login_title_margin"
         android:text="@string/app_name"
         android:textSize="@dimen/login_title_size" />
+    <!-- 登录信息输入模块 -->
 
     <EditText
-        android:layout_width="@dimen/login_et_width"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/main_margin"
-        android:background="@drawable/bg_et"
-        android:digits="@+id/et_login_company"
+        android:id="@+id/et_company"
+        style="@style/et_login"
         android:drawableLeft="@drawable/ic_account"
         android:drawableStart="@drawable/ic_account"
-        android:hint="@string/hint_enter_company"
-        android:padding="@dimen/login_et_padding"
-        android:textSize="@dimen/login_text_size" />
+        android:hint="@string/enter_company" />
 
     <EditText
-        android:layout_width="@dimen/login_et_width"
+        android:id="@+id/et_account"
+        style="@style/et_login"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/main_margin"
-        android:background="@drawable/bg_et"
-        android:digits="@+id/et_login_account"
         android:drawableLeft="@drawable/ic_account"
         android:drawableStart="@drawable/ic_account"
-        android:hint="@string/hint_enter_account"
-        android:padding="@dimen/login_et_padding"
-        android:textSize="@dimen/login_text_size" />
+        android:hint="@string/enter_account" />
 
     <EditText
-        android:layout_width="@dimen/login_et_width"
+        android:id="@+id/et_password"
+        style="@style/et_login"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/main_margin"
-        android:background="@drawable/bg_et"
-        android:digits="@+id/et_login_password"
         android:drawableLeft="@drawable/ic_lock"
         android:drawableStart="@drawable/ic_lock"
-        android:hint="@string/hint_enter_password"
-        android:padding="@dimen/login_et_padding"
-        android:textSize="@dimen/login_text_size" >
+        android:hint="@string/enter_password"
+        android:inputType="textPassword" >
     </EditText>
+    <!-- 记住用户名和免登陆 -->
 
-    <RadioGroup
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="@dimen/login_et_width"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:layout_margin="@dimen/login_cb_margin" >
 
-        <RadioButton
+        <CheckBox
+            android:id="@+id/cb_save_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_cb_margin"
+            android:layout_marginStart="@dimen/login_cb_margin"
             android:text="@string/save_account"
             android:textSize="@dimen/login_text_size" />
 
-        <RadioButton
+        <CheckBox
+            android:id="@+id/cb_auto_logins"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="@dimen/login_cb_margin"
+            android:layout_marginRight="@dimen/login_cb_margin"
             android:text="@string/auto_login"
             android:textSize="@dimen/login_text_size" />
-    </RadioGroup>
+    </RelativeLayout>
+    <!-- 登陆按键 -->
 
     <Button
-        android:layout_width="@dimen/login_et_width"
-        android:layout_height="wrap_content"
-        android:background="@drawable/bg_btn"
-        android:padding="@dimen/login_et_padding"
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/login_btn_width"
+        android:layout_height="@dimen/login_btn_height"
+        android:background="@drawable/button_purple"
         android:text="@string/login"
         android:textSize="@dimen/login_text_size" />
 

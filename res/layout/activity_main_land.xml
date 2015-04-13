@@ -21,7 +21,7 @@
             android:layout_marginBottom="@dimen/main_margin"
             android:layout_weight="4"
             android:background="@drawable/transparent"
-            android:contentDescription="@string/main_default_company"
+            android:contentDescription="@string/default_company"
             android:padding="@dimen/main_margin"
             android:src="@drawable/ic_yuchengtech" />
         <!-- 左侧公司名称 -->
@@ -39,9 +39,9 @@
             android:marqueeRepeatLimit="marquee_forever"
             android:padding="@dimen/main_tv_padding"
             android:singleLine="true"
-            android:text="@string/main_default_company"
+            android:text="@string/default_company"
             android:textColor="@color/text_poop"
-            android:textSize="@dimen/main_text_size" />
+            android:textSize="@dimen/main_function_size" />
         <!-- 左下角按钮 -->
 
         <LinearLayout
@@ -57,7 +57,7 @@
                 android:layout_marginRight="@dimen/main_margin"
                 android:layout_weight="1"
                 android:background="@drawable/transparent"
-                android:contentDescription="@string/main_back"
+                android:contentDescription="@string/back"
                 android:padding="@dimen/main_margin"
                 android:src="@drawable/ic_back" />
 
@@ -66,7 +66,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/transparent"
-                android:contentDescription="@string/main_setting"
+                android:contentDescription="@string/setting"
                 android:padding="@dimen/main_margin"
                 android:src="@drawable/ic_setting" />
         </LinearLayout>
@@ -86,77 +86,62 @@
             android:layout_width="match_parent"
             android:layout_weight="1" >
 
+            <!-- 收银 -->
+
             <TextView
+                style="@style/selector_main"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/main_padding"
-                android:layout_marginStart="@dimen/main_padding"
                 android:drawableTop="@drawable/ic_cashier"
-                android:gravity="center"
-                android:text="@string/main_cashier"
-                android:textColor="@color/text_poop"
-                android:textSize="@dimen/main_text_size" >
+                android:text="@string/cashier" >
             </TextView>
+            <!-- 订单管理 -->
 
             <TextView
+                style="@style/selector_main"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/main_padding"
-                android:layout_marginStart="@dimen/main_padding"
                 android:drawableTop="@drawable/ic_orders"
-                android:gravity="center"
-                android:text="@string/main_orders"
-                android:textColor="@color/text_poop"
-                android:textSize="@dimen/main_text_size" >
+                android:text="@string/orders" >
             </TextView>
+            <!-- 优惠券 -->
 
             <TextView
+                style="@style/selector_main"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/main_padding"
-                android:layout_marginStart="@dimen/main_padding"
                 android:drawableTop="@drawable/ic_coupon"
-                android:gravity="center"
-                android:text="@string/main_coupon"
-                android:textColor="@color/text_poop"
-                android:textSize="@dimen/main_text_size" />
+                android:text="@string/coupon" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_weight="1" >
 
+            <!-- 会员管理 -->
+
             <TextView
+                style="@style/selector_main"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/main_padding"
-                android:layout_marginStart="@dimen/main_padding"
                 android:drawableTop="@drawable/ic_vip"
-                android:gravity="center"
-                android:text="@string/main_vip"
-                android:textColor="@color/text_poop"
-                android:textSize="@dimen/main_text_size" />
+                android:text="@string/vip" />
+            <!-- 店面优惠 -->
 
             <TextView
+                style="@style/selector_main"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/main_padding"
-                android:layout_marginStart="@dimen/main_padding"
                 android:drawableTop="@drawable/ic_sales"
-                android:gravity="center"
-                android:text="@string/main_sales"
-                android:textColor="@color/text_poop"
-                android:textSize="@dimen/main_text_size" />
+                android:text="@string/sales" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_weight="1" >
 
+            <!-- 数据统计 -->
+
             <TextView
+                style="@style/selector_main"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/main_padding"
-                android:layout_marginStart="@dimen/main_padding"
                 android:drawableTop="@drawable/ic_statistics"
-                android:gravity="center"
-                android:text="@string/main_statistics"
-                android:textColor="@color/text_poop"
-                android:textSize="@dimen/main_text_size" />
+                android:text="@string/statistics" />
         </TableRow>
     </TableLayout>
 

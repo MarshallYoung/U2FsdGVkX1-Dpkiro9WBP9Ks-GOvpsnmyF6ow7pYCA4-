@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 藕荷色 -->
+    <color name="text_poop">#9f680e</color>
+    <!-- 背景黄色 -->
+    <color name="poop">#ffb023</color>
+    <!-- 紫色 -->
+    <color name="purple">#bd0983</color>
+
+</resources>

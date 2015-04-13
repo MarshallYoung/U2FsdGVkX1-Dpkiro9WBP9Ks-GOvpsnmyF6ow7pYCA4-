@@ -8,6 +8,8 @@
     <dimen name="login_title_margin">120dp</dimen>
     <!-- 文本框长度 -->
     <dimen name="login_et_width">420dp</dimen>
+    <!-- 文本框高度 -->
+    <dimen name="login_et_height">42dp</dimen>
     <!-- 文本框外边距 -->
     <dimen name="login_et_margin">1dp</dimen>
     <!-- 内边距 -->
@@ -19,23 +21,17 @@
     <!-- 按钮长度 -->
     <dimen name="login_btn_width">264dp</dimen>
     <!-- 按钮高度 -->
-    <dimen name="login_btn_height">54dp</dimen>
+    <dimen name="login_btn_height">48dp</dimen>
     <!-- 按钮圆角半径,是高度的二分之一 -->
-    <dimen name="login_btn_radius">27dp</dimen>
+    <dimen name="login_btn_radius">24dp</dimen>
     <!-- ====================主界面===================== -->
-    <!-- 外边距 -->
-    <dimen name="main_margin">12dp</dimen>
     <!-- 内边距 -->
-    <dimen name="main_padding">30dp</dimen>
-    <!-- 公司图像的边长 -->
-    <dimen name="main_square_length">240dp</dimen>
-    <!-- 公司名称字体大小 -->
-    <dimen name="main_company_size">36sp</dimen>
-    <!-- 功能选项卡高度 -->
-    <dimen name="main_function_height">96dp</dimen>
-    <!-- 功能选项卡内边距 -->
-    <dimen name="main_function_padding">6dp</dimen>
-    <!-- 功能选项字体大小 -->
-    <dimen name="main_function_size">30sp</dimen>
+    <dimen name="main_padding">24dp</dimen>
+    <!-- 外边距 -->
+    <dimen name="main_margin">6dp</dimen>
+    <!-- TextView内边距 -->
+    <dimen name="main_tv_padding">6dp</dimen>
+    <!-- 字体大小 -->
+    <dimen name="main_function_size">18sp</dimen>
 
 </resources>
