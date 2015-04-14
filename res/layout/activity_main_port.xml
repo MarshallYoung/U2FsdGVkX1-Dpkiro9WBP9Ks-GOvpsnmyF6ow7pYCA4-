@@ -40,6 +40,7 @@
     <!-- 收银 -->
 
     <TextView
+        android:id="@+id/tv_cashier"
         style="@style/function_item"
         android:layout_marginBottom="@dimen/main_margin"
         android:layout_marginTop="@dimen/main_padding"
@@ -49,6 +50,7 @@
     <!-- 订单管理 -->
 
     <TextView
+        android:id="@+id/tv_orders"
         style="@style/function_item"
         android:layout_marginBottom="@dimen/main_margin"
         android:drawableLeft="@drawable/ic_orders"
@@ -57,6 +59,7 @@
     <!-- 店面活动 -->
 
     <TextView
+        android:id="@+id/tv_sales"
         style="@style/function_item"
         android:drawableLeft="@drawable/ic_sales"
         android:drawableStart="@drawable/ic_sales"

@@ -40,6 +40,8 @@
             android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
         <!-- 应用主界面 -->
         <activity android:name="com.yuchengtech.yuchengo2o.activity.impl.MainActivity" />
+        <!-- 订单查询界面 -->
+        <activity android:name="com.yuchengtech.yuchengo2o.activity.impl.OrdersActivity" />
         <!-- 二维码扫描界面 -->
         <activity
             android:name="com.zxing.activity.CaptureActivity"

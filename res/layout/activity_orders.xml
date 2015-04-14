@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/poop"
+    android:orientation="vertical"
+    android:padding="@dimen/main_padding" >
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="@dimen/orders_btn_width"
+        android:layout_height="@dimen/default_btn_height"
+        android:background="@drawable/button_search"
+        android:text="按照时间搜索" />
+
+    <TextView
+        android:id="@+id/tv_order_num_for_search"
+        style="@style/et_login"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_time"
+        android:hint="请输入订单号" />
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="@dimen/orders_btn_width"
+        android:layout_height="@dimen/default_btn_height"
+        android:layout_toEndOf="@id/btn_time"
+        android:layout_toRightOf="@id/btn_time"
+        android:background="@drawable/button_search"
+        android:text="搜索" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_orders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_order_num_for_search"
+        android:background="#bbccaa"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>

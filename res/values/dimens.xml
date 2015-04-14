@@ -1,6 +1,10 @@
 <resources>
 
     <!-- ====================默认===================== -->
+    <!-- 按钮的高度 -->
+    <dimen name="default_btn_height">54dp</dimen>
+    <!-- 按钮的圆角半径,是高度的二分之一 -->
+    <dimen name="default_btn_radius">27dp</dimen>
     <!-- ====================登陆界面==================== -->
     <!-- 标题大小 -->
     <dimen name="login_title_size">120sp</dimen>
@@ -18,10 +22,6 @@
     <dimen name="login_cb_margin">24dp</dimen>
     <!-- 按钮长度 -->
     <dimen name="login_btn_width">264dp</dimen>
-    <!-- 按钮高度 -->
-    <dimen name="login_btn_height">54dp</dimen>
-    <!-- 按钮圆角半径,是高度的二分之一 -->
-    <dimen name="login_btn_radius">27dp</dimen>
     <!-- ====================主界面===================== -->
     <!-- 外边距 -->
     <dimen name="main_margin">12dp</dimen>
@@ -37,5 +37,8 @@
     <dimen name="main_function_padding">6dp</dimen>
     <!-- 功能选项字体大小 -->
     <dimen name="main_function_size">30sp</dimen>
+    <!-- ====================订单搜索==================== -->
+    <!-- 按钮的长度 -->
+    <dimen name="orders_btn_width">200dp</dimen>
 
 </resources>

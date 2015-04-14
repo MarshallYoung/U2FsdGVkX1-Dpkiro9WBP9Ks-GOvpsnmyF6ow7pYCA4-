@@ -21,9 +21,9 @@
     <!-- 按钮长度 -->
     <dimen name="login_btn_width">264dp</dimen>
     <!-- 按钮高度 -->
-    <dimen name="login_btn_height">48dp</dimen>
+    <dimen name="default_btn_height">48dp</dimen>
     <!-- 按钮圆角半径,是高度的二分之一 -->
-    <dimen name="login_btn_radius">24dp</dimen>
+    <dimen name="default_btn_radius">24dp</dimen>
     <!-- ====================主界面===================== -->
     <!-- 内边距 -->
     <dimen name="main_padding">24dp</dimen>

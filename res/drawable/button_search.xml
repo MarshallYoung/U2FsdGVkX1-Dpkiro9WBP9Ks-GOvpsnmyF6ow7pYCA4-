@@ -6,7 +6,7 @@
 
     <size
         android:height="@dimen/default_btn_height"
-        android:width="200dp" />
+        android:width="@dimen/orders_btn_width" />
 
     <solid android:color="@color/purple" />
 
